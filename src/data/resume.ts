@@ -54,6 +54,7 @@ export const projects = {
       url: "https://github.com/lirpa62/Chzzk-Grinder",
       image: "",
       tags: ["JavaScript", "Chrome Extensions"],
+      chromeId: "igiaeniadpmojahgllpodpfmedblaalb",
       problem:
         "치지직 시청 중 악성 채팅이 발생했을 때 해당 사용자의 UID를 확인하거나 증거를 수집하기 어려웠습니다. 기존 플랫폼 기능만으로는 효과적으로 대응하기 힘들었습니다.",
       solution:
@@ -69,6 +70,7 @@ export const projects = {
       url: "https://github.com/lirpa62/Chzzk-Logpower-Eraser",
       image: "",
       tags: ["JavaScript", "Chrome Extensions"],
+      chromeId: "npghhgjfapajogklmofacjfmpliolmjc",
       problem:
         "치지직의 통나무 파워 목록에 원하지 않는 채널이 표시되어 관리가 번거로웠습니다.",
       solution:

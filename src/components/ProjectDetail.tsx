@@ -54,45 +54,51 @@ export function ProjectDetailView({ project }: ProjectDetailViewProps) {
           <p className="text-lg mb-2" style={{ color: c.textSub }}>
             {project.desc}
           </p>
-          <div className="flex items-center gap-4 mt-4 mb-12">
-            <span className="text-sm" style={{ color: c.textMuted }}>
-              {project.period}
-            </span>
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-sm transition-colors"
-              style={{ color: c.accent }}
-            >
-              <GithubIcon size={14} /> GitHub
-            </a>
-            {project.live && (
+          <div className="mt-4 mb-12 flex flex-col gap-2 md:flex-row md:flex-wrap md:items-center md:gap-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+              <span className="text-sm" style={{ color: c.textMuted }}>
+                {project.period}
+              </span>
               <a
-                href={project.live}
+                href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-sm transition-colors"
                 style={{ color: c.accent }}
               >
-                <ExternalLink size={14} /> Live
+                <GithubIcon size={14} /> GitHub
               </a>
-            )}
-            {project.chromeId && (
-              <img
-                src={`https://img.shields.io/chrome-web-store/users/${project.chromeId}?logo=googlechrome&logoColor=white&label=CHROME%20USERS&color=4285F4`}
-                alt="Chrome Web Store Users"
-                loading="lazy"
-                className="h-5"
-              />
-            )}
-            {project.whaleGistId && (
-              <img
-                src={`https://img.shields.io/endpoint?logo=naver&logoColor=white&label=WHALE%20USERS&&url=https%3A%2F%2Fgist.githubusercontent.com%2Flirpa62%2F${project.whaleGistId}%2Fraw%2F${project.gistTitle}.json`}
-                alt="Whale Web Store Users"
-                loading="lazy"
-                className="h-5"
-              />
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm transition-colors"
+                  style={{ color: c.accent }}
+                >
+                  <ExternalLink size={14} /> Live
+                </a>
+              )}
+            </div>
+            {(project.chromeId || project.whaleGistId) && (
+              <div className="flex flex-wrap items-center gap-2 md:gap-3">
+                {project.chromeId && (
+                  <img
+                    src={`https://img.shields.io/chrome-web-store/users/${project.chromeId}?logo=googlechrome&logoColor=white&label=CHROME%20USERS&color=4285F4`}
+                    alt="Chrome Web Store Users"
+                    loading="lazy"
+                    className="h-5 w-auto max-w-full"
+                  />
+                )}
+                {project.whaleGistId && (
+                  <img
+                    src={`https://img.shields.io/endpoint?logo=naver&logoColor=white&label=WHALE%20USERS&&url=https%3A%2F%2Fgist.githubusercontent.com%2Flirpa62%2F${project.whaleGistId}%2Fraw%2F${project.gistTitle}.json`}
+                    alt="Whale Web Store Users"
+                    loading="lazy"
+                    className="h-5 w-auto max-w-full"
+                  />
+                )}
+              </div>
             )}
           </div>
         </FadeIn>
