@@ -1,8 +1,12 @@
-# lirpa62-portfolio
+# Lirpa 포트폴리오
 
 개인 포트폴리오 웹사이트입니다.
 
 **Live:** [lirpa62-portfolio.vercel.app](https://lirpa62-portfolio.vercel.app/)
+
+| Dark Mode                                       | Light Mode                                        |
+| ----------------------------------------------- | ------------------------------------------------- |
+| ![Dark Mode](./screenshots/screenshot-dark.png) | ![Light Mode](./screenshots/screenshot-light.png) |
 
 ## 기술 스택
 
@@ -10,7 +14,7 @@
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Blog:** MDX + next-mdx-remote + rehype-pretty-code
-- **Animation:** IntersectionObserver 기반 스크롤 등장
+- **Animation:** IntersectionObserver 기반 스크롤 진입 애니메이션
 - **Deploy:** Vercel
 
 ## 구조
