@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 import { Nav } from "@/components/Nav";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "남기성 | Frontend Developer",
@@ -46,6 +47,7 @@ export default function RootLayout({
           <Nav />
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
