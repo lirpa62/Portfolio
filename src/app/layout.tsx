@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "남기성 | Frontend Developer",
   description:
     "불편한 지점을 빠르게 발견하고, 실제로 쓰이는 도구로 해결합니다.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "남기성 | Frontend Developer",
     description:
