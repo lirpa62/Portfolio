@@ -12,7 +12,7 @@ export const projects = {
   "CHZZK Tools": [
     {
       id: "con-chzzk",
-      name: "Con-Chzzk",
+      name: "콘치즈",
       desc: "치지직 스트리머 알림 확장 프로그램",
       period: "2025.08 ~",
       url: "https://github.com/lirpa62/Con-Chzzk",
@@ -30,7 +30,7 @@ export const projects = {
     },
     {
       id: "cheemoticon-cleaner",
-      name: "Cheemoticon-Cleaner",
+      name: "치모티콘 정리",
       desc: "이모티콘 목록 정리 확장 프로그램 (시리즈 최다 사용자)",
       period: "2025.08 ~",
       url: "https://github.com/lirpa62/Cheemoticon-Cleaner",
@@ -48,7 +48,7 @@ export const projects = {
     },
     {
       id: "chzzk-grinder",
-      name: "Chzzk-Grinder",
+      name: "치즈 그라인더",
       desc: "클린 시청 도구 (UID 확인·차단·증거 수집)",
       period: "2025.12 ~",
       url: "https://github.com/lirpa62/Chzzk-Grinder",
@@ -66,7 +66,7 @@ export const projects = {
     },
     {
       id: "chzzk-logpower-eraser",
-      name: "Chzzk-Logpower-Eraser",
+      name: "통나무 파워 지우개",
       desc: "통나무 파워 채널 숨김 확장 프로그램",
       period: "2026.02 ~",
       url: "https://github.com/lirpa62/Chzzk-Logpower-Eraser",
@@ -81,6 +81,24 @@ export const projects = {
         "특정 채널을 통나무 파워 목록에서 숨길 수 있는 확장 프로그램을 개발했습니다.",
       result:
         "Chrome 80명, Whale 20명의 실사용자에게 서비스 중입니다. 사용자 요청을 받고 당일에 개발부터 배포까지 완료하여 아이디어 발견부터 배포까지의 사이클을 최소화한 프로젝트입니다.",
+    },
+    {
+      id: "chzzk-clip-button-eraser",
+      name: "치지직 클립 버튼 지우개",
+      desc: "클립 시청 시 방해 버튼 숨김 확장 프로그램",
+      period: "2026.04 ~",
+      url: "https://github.com/lirpa62/Chzzk-Clip-Button-Eraser",
+      image: "",
+      tags: ["JavaScript", "Chrome Extensions"],
+      chromeId: "nnmjcahkfdhjbkihamkfkibcmojanefb",
+      whaleGistId: "41cc5fecee9cce99d24e4b558b39349d",
+      gistTitle: "Chzzk-Clip-Btn-Eraser-Whale-Users",
+      problem:
+        "치지직 클립을 시청할 때 스트리머가 라이브 중이면 '클릭하여 라이브 시청' 버튼이 영상 위에 상시 표시되어 시청을 방해했습니다. 또한 이전/다음 클립 내비게이션 버튼도 항상 표시되어 영상에 집중하기 어려웠습니다.",
+      solution:
+        "Content Script(MAIN world)에서 MutationObserver로 치지직 클립 페이지의 DOM 변경을 감시하여 '클릭하여 라이브 시청' 플로팅 버튼을 자동으로 숨기고 이전/다음 내비게이션 버튼은 마우스 호버 시에만 표시되도록 제어했습니다. 기존 치즈 그라인더(Chzzk-Grinder)에서 클립 관련 기능만 분리하여 단일 목적의 가벼운 확장 프로그램으로 배포했습니다.",
+      result:
+        "Chrome/Edge/Whale/Firefox 웹 스토어에 배포하여 운영 중입니다. 하나의 확장 프로그램에서 단일 기능을 분리·독립 배포하는 판단을 통해 사용자가 필요한 기능만 선택적으로 설치할 수 있도록 개선했습니다.",
     },
   ],
   "Web / Data": [

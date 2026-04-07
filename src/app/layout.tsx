@@ -6,8 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "남기성 | Frontend Developer",
-  description:
-    "불편한 지점을 빠르게 발견하고, 실제로 쓰이는 도구로 해결합니다.",
+  description: "불편한 지점을 빠르게 발견하고 실제로 쓰이는 도구로 해결합니다.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "남기성 | Frontend Developer",
     description:
-      "불편한 지점을 빠르게 발견하고, 실제로 쓰이는 도구로 해결합니다.",
+      "불편한 지점을 빠르게 발견하고 실제로 쓰이는 도구로 해결합니다.",
     url: "https://your-domain.vercel.app",
     type: "website",
   },

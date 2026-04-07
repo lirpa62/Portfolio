@@ -51,7 +51,7 @@ export function Hero() {
           className="text-lg md:text-xl mt-6 max-w-xl mx-auto leading-relaxed"
           style={{ color: "var(--text-sub)" }}
         >
-          불편한 지점을 빠르게 발견하고,
+          불편한 지점을 빠르게 발견하고
           <br />
           실제로 쓰이는 도구로 해결합니다.
         </p>
